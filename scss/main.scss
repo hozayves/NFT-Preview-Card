@@ -1,0 +1,57 @@
+@import 'config', 'card';
+// =========== RESET CSS ====================
+
+// Remove border sizing rules
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+// Remove border on form and inherit font
+input,
+select,
+textarea,
+button {
+    outline: none;
+    font: inherit;
+}
+// Remove default margin and padding
+html,
+body,
+h1,h2,h3,h4,h5,h6,
+figure,
+figcaption,
+dd,dl {
+    margin: 0;
+    padding: 0;
+}
+// Remove list style on ol, ul element
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+// Set core root defaults
+html:focus-within {
+    scroll-behavior: smooth;
+}
+// Set core body defaults
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+// Make image/picture easier to work
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+@media(prefers-reduce-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+        *,*::before,*::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            animation-duration: 0.01ms !important;
+            scroll-behavior: auto!important;
+        }
+    }
+}
