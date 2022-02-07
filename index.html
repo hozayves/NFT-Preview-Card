@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="../dist/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/css/main.css">
     <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
-    
+    <div class="card">
+        <div class="card__img">
+            <img src="./dist/images/image-equilibrium.jpg" alt="">
+        </div>
+        <h1 class="card__title">Equilibrium #3429</h1>
+        <p class="card__content">Our Equilibrium collection promotes balance and calm</p>
+        <div class="card__ether">
+            <span class="card__ether__rate">
+                <img src="./dist/images/icon-ethereum.svg" alt="">
+                <label>0.041eth</label>
+            </span>
+            <span class="card__ether__time">
+                <img src="./dist/images/icon-clock.svg" alt="">
+                <label>3 days left</label>
+            </span>
+        </div>
+        <div class="card__line"></div>
+        <div class="card__user">
+            <img class="card__user__img" src="./dist/images/image-avatar.png" alt="user">
+            <span class="card__user__name">Creation of</span><span>jules wyvern</span>
+        </div>
+    </div>
 </body>
 </html>
