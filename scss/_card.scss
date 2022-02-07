@@ -83,15 +83,18 @@ body {
             width: 30px;
             height: 30px;
         }
-        &__name {
-            font-weight: 300;
-            color: map-get($colors, 'white');
-            font-size: 1rem;
-            opacity: 0.7;
-        }
-        span {
-            color: map-get($colors, 'white');
-            text-transform: capitalize;
+        &__names {
+            margin-left: 5px;
+            &__name {
+                font-weight: 300;
+                color: map-get($colors, 'white');
+                font-size: 1rem;
+                opacity: 0.7;
+                &--color {
+                    opacity: 1;
+                    text-transform: capitalize;
+                }
+            }
         }
     }
 }
