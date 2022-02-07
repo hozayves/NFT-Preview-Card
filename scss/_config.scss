@@ -16,13 +16,13 @@ $font-size: 18px; // Paragraph
     transition: all 0.5s ease-in-out;
 }
 // Added Mixin for reponsive design
-@mixin ipdad-screen {
+@mixin ipad-screen {
     @media screen and (min-width: 768px) {
         @content;
     }
 }
-@mixin ipad-screen {
-    @media screen and (min-width: 980px) {
+@mixin medium-screen {
+    @media screen and (min-width: 769px) {
         @content;
     }
 }
