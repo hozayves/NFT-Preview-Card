@@ -11,6 +11,10 @@ $colors: (
 $font-family: 'Outfit';
 $font-size: 18px; // Paragraph
 
+// Added Mixin for transition
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
 // Added Mixin for reponsive design
 @mixin ipdad-screen {
     @media screen and (min-width: 768px) {
