@@ -10,3 +10,10 @@ $colors: (
 );
 $font-family: 'Outfit';
 $font-size: 18px; // Paragraph
+
+// Added Mixin for reponsive design
+@mixin ipdad-screen {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
