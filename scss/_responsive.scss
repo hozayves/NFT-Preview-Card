@@ -1,9 +1,5 @@
 @include ipad-screen {
-    body {
-        background-color: red;
-    }
     .card {
-        border: 2px solid red;
         width: 65%;
         padding: 2rem;
         gap: 1.5rem;
@@ -45,4 +41,46 @@
             }
         }
     }
+}
+@include medium-screen {
+    .card {
+        width: 330px;
+        max-height: 90vh;
+        min-height: auto;
+        gap: 1rem;
+        &__title {
+            font-size: 1.2rem;
+        }
+        &__content {
+            font-size : 1rem;
+        }
+        &__ether {
+            font-size: 1rem;
+            &__rate {
+                img {
+                    width: 12px;
+                    height: 20px;
+                }
+            }
+            &__time {
+                img {
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+        &__user {
+            &__img {
+                width: 40px;
+                height: 40px;
+                border: 2px solid #fff;
+            }
+            &__names {
+                &__name {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
 }
