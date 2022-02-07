@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     gap: 1rem;
-    width: 85%;
+    width: 330px;
     border-radius: 15px;
     padding: 1rem;
     background-color: map-get($colors, 'very-dark-blue-card');
@@ -134,6 +134,11 @@ body {
                 &--color {
                     opacity: 1;
                     text-transform: capitalize;
+                    cursor: pointer;
+                    &:hover {
+                        color: map-get($colors, 'cyan');
+                        @include transition;
+                    }
                 }
             }
         }
