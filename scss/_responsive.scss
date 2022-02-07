@@ -1,5 +1,9 @@
-@include ipdad-screen {
+@include ipad-screen {
+    body {
+        background-color: red;
+    }
     .card {
+        border: 2px solid red;
         width: 65%;
         padding: 2rem;
         gap: 1.5rem;

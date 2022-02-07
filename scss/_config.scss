@@ -21,3 +21,8 @@ $font-size: 18px; // Paragraph
         @content;
     }
 }
+@mixin ipad-screen {
+    @media screen and (min-width: 980px) {
+        @content;
+    }
+}
