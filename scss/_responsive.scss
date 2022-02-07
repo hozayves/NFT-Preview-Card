@@ -1,0 +1,44 @@
+@include ipdad-screen {
+    .card {
+        width: 65%;
+        padding: 2rem;
+        gap: 1.5rem;
+        &__title {
+            font-size: 2.3rem;
+        }
+        &__content {
+            font-size: 1.5rem;
+        }
+        &__ether {
+            font-size: 1.5rem;
+            &__rate {
+                img {
+                    width: 17px;
+                    height: 30px;
+                }
+            }
+            &__time {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+        }
+        &__line {
+            border-bottom: 1px solid map-get($colors, 'white');
+        }
+        &__user {
+            &__img {
+                border: 4px solid white;
+                width: 60px;
+                height: 60px;
+            }
+            &__names {
+                &__name {
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
